@@ -7,10 +7,10 @@ h1 {
     height: 30px;
     width: 800px;
     padding: 10px;
-    font-weight: 
-    font-family: 100;
-    text-align
-    text-transform
+    font-weight: bold;
+    font-family:  "Times New Roman", Times, serif;
+    text-align:;
+    text-transform:;
 
 }
 h2{
@@ -21,10 +21,8 @@ h2{
     height: 30px;
     width: 800px;
     margin: 10px; 
-    font-weight:100;
-    font-family:100;
-    text-align
-    text-transform
+    font-weight:bold;
+    font-family: "Times New Roman", Times, serif;
 
 }
 div.nav{
