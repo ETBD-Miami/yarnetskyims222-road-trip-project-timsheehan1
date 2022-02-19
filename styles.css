@@ -1,0 +1,59 @@
+h1 {
+    color: white;
+    background-color: blue;
+    font-size: 1.5em;
+    border: 1px solid black;
+    font: bold white;
+    height: 30px;
+    width: 800px;
+    padding: 10px;
+    font-weight: 
+    font-family: 100;
+    text-align
+    text-transform
+
+}
+h2{
+    color: white;
+    background-color: blue;
+    font: white;
+    border: 1px solid black;
+    height: 30px;
+    width: 800px;
+    margin: 10px; 
+    font-weight:100;
+    font-family:100;
+    text-align
+    text-transform
+
+}
+div.nav{
+    border: 1px solid black;
+    background-color:aliceblue;
+    padding: 10px;
+    height: 75px;
+    width: 40px;
+    margin: 10px;
+}
+p {
+    height: 100Px;
+    width: 800px;
+    border: 2px solid black;
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+}
+ul{
+    border: 2px solid black;
+    height: 100px;
+    width: 800px;
+    margin: 10px;
+    padding: 10px;
+}
+img{
+border: 2px solid black;
+width: 100%;
+height: 600px;
+margin: 10px;
+padding: 10px;
+}
