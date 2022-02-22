@@ -6,14 +6,14 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     padding: 0.5em 0;
     margin: 0 0 1em 0;
-    border: 10px solid black
+    border: 10px solid white;
 }
 
 h2{
     color: white;
     background-color: blue;
     font: white;
-    border: 1px solid black;
+    border: 5px solid white;
     margin: 0.25em 0 1em 0;
     font-weight:bold;
     font-family: "Times New Roman", Times, serif;
@@ -21,11 +21,15 @@ h2{
     padding: 1em;
 }
 h3 {
-    background-color: blue;
     color: white;
-    padding: 1em;
+    background-color: blue;
+    font: bold white;
+    border: 5px solid white;
     margin: 0.25em 0 1em 0;
+    font-weight:bold;
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
+    padding: 1em;
 }
 .blue {
     background-color: white;
@@ -38,15 +42,16 @@ h3 {
     border-radius: 10px;
 }
 img{
-width: 100%;
+width: 98%;
 height: 600px;
 margin: 10px;
-padding: 10px;
+border: 5px solid white;
 }
 .red { 
-    border: 2px solid black;
+    border: 2px solid blue;
     width: 100px;
     height: 80px;
+    background-color: white;
 }
 .green {
     border: 2px solid blue;
@@ -54,4 +59,8 @@ padding: 10px;
     padding: 1em;
     margin: 0.25em 0 1em 0;
     border-radius: 10px;
+    background-color: white;
 }
+ body{
+     background-color: burlywood;
+ }
