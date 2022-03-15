@@ -18,7 +18,7 @@
       <li><a href="eat.html">Places to eat</a></li>
     </ul>
 </nav>
-
+<h1>Things to do in Cleveland</h1>
 <div class="slideshow-container">
 
     <div class="mySlides fade">
@@ -49,9 +49,8 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-<img src="images/rock%20and%20roll%20HOF.jpeg" alt="Rock and Roll HOF" class="img">
 <div class="attractions">
-    <h1>Things to do in Cleveland</h1>
+   
 <p class="green">In cleveland there is something for everyone. With the citys roots in rockand roll there is the rock and roll hall of fame. Cleveland. also has multupal professional sports teams, includeing The Cavs, The Browns, and the newly named Gardians. Atractions around the city include Ceader Point, The Cleveland Zoo and or aquarium, and there is allwase something takeing place in the IX Center. </p1>
     <h2> Sporting Events</h2>
 <ul class="blue" >
@@ -67,4 +66,32 @@
     <li><a href="https://greatscience.com/">Great Lakes Science Center</a>:located next to First Enegry stadium the Great Lakes Science Center is a great place to learn and have fun for kids. 601 Erieside Ave</li>
 </ul>
 </body>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 </html>
