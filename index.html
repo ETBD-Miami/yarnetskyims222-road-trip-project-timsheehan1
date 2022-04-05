@@ -4,16 +4,100 @@
 <head>      
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your page title goes here</title>
-    <meta name="author" content="Your name goes here">
+    <title>road trip to Clevland</title>
+    <meta name="author" content="Tim Sheehan">
     <meta name="description" content="describe your page here">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gurajada&display=swap" rel="stylesheet">
+  </head>
 
-</head>
 
 <body>
+  <main class="container">
 
-    <!-- CONTENT APPEARING ON THE SCREEN GOES BETWEEN THE BODY TAGS. This is an html comment. you may delete it. -->
+  <nav>
+    <ul class="red">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="do.html">Things to do</a></li>
+    <li><a href="eat.html">Places to eat</a></li>
+    </ul>
+ </nav>
+ <h1>Road Trip to Clevland</h1>
+ <div class="slideshow-container">
 
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Cleveland-Skyline.jpeg" style="width:100%">
+      <div class="text">clevland skyline</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/clevland river.jpeg" style="width:100%">
+      <div class="text">clevland river</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/clevland sign.webp" style="width:100%">
+      <div class="text">clevland sign</div>
+    </div>
+  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+ </div>
+
+  
+  <h2>City History</h2>
+    <p class="green"> Cleveland is known for being a blue coller town being founded by and made up of many blue coller workers. It has several major sports francheises, Browns and Cavs, and has been called the birthplace of rock and roll. Established in 1796 Cleveland has been is historic city in the rustbelt but has since been changing to keep up with todays devoloping technology. </p>
+      <div class="atractions in cleveland">
+    <h3>Atractions in Clevland</h3>
+    <ul class="blue">
+      <li><a href="https://www.cedarpoint.com/">Cedar Point</a>: Amazing nearby roller coaster-centric amusement park. 1 Cedar Point Dr, Sandusky.</li>
+      <li><a href="http://westsidemarket.org/">West Side Market</a>: Dozens of delicious locally owned food creators, bakers, butchers. 1979 W 25th St, Cleveland</a></li>
+      <li><a href="https://www.ixcenter.com/"> IX Center</a>: Clevelands premere expo center with new atractions and shows year round. 1 I-X Center Dr, Cleveland</a></li>
+      <li><a href="https://www.rockhall.com/?gclid=Cj0KCQiAr5iQBhCsARIsAPcwRONRO32q2CLyvyZlqkhq5wfYHyGXgGzll4GT39zed6-x2GUgoaTLxSIaAhyNEALw_wcB">Rock and Roll Hall of Fame</a>:The world famious rock and roll hall of fame, home to memrabelia from the greatest rock artists of all time. 1100 E 9th St, cleveland</li>
+      </ul>
+    <h2>Map of Cleveland</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23909.695027941354!2d-81.71102348926617!3d41.488845719767085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f00dd15ff6df%3A0xe85ca130bbcedde7!2sCleveland%2C%20OH%2044113!5e0!3m2!1sen!2sus!4v1647361708438!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>   
 </body>
-
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 </html>
